@@ -33,10 +33,11 @@ namespace Tyuiu.PimenovaTS.Sprint5.TaskReview.V5.Lib
                     for (int i = 0; i < line.Length; i++)
                     {
                         char c = line[i];
-                        if (Array.IndexOf(alph, c) < 0)
+                        if (!((c >= 'A') && (c <= 'Z')) && !((c >= 'a') && (c <= 'z')))
                         {
                             strLine = strLine + line[i];
                         }
+
                     }
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
                     strLine = "";

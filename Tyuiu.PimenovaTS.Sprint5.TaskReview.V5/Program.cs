@@ -33,7 +33,7 @@ namespace Tyuiu.PimenovaTS.Sprint5.TaskReview.V5
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = @"C:\DataSprint5\InPutDataFileTask7V5.txt";
+            string path = $@"C:\DataSprint5\InPutDataFileTask7V5.txt";
 
             string pathSaveFile = $@"{Directory.GetCurrentDirectory()}\OutPutDataFileTask7V5.txt";
 
